@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Site</title>
-    <h1>JORDEN WAS HERE</h1>
-    <link type="text/css" rel="stylesheet" href="styling.css">
-    <link rel="icon" type="image/x-icon"  href="Good-Smile-Company-Nendoroid-1281-Kirby-Waddle-Dee-Figure-Japan-Figure-4580590120242-0.jpg">
+    <title>CIT TCG</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    Hey, this website is under construction. Check back later! <br>
+    <!-- Main Div -->
+<div class="main_area" id="main_area">
+    <!-- Pack Div -->
+    <div class="pack" id="pack">
+        <!-- Pack & Pack Reset -->
+        <button class="pack_button" id="pack_button" onclick={packOpen()}>BCIT</button>
+    </div>
+</div>
+<div class="music-controls">
+    <button id="music-prev" class="music-button">
+        <img src="./sprites/MediumArrow-Left@2x.png" alt="Previous Track">
+    </button>
+    <button class="music-button" onclick="toggleMusic()">
+        <img id="musicButton" src="./sprites/Music-On@2x.png" alt="Toggle Music">
+    </button>
+    <button id="music-next" class="music-button">
+        <img src="./sprites/MediumArrow-Right@2x.png" alt="Next Track">
+    </button>
+</div>
+<audio id="audio" autoplay loop>
+    <source src="./audio/Pokémon-Movie05-BGM-Going-to-Latios.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <a href="https://www.youtube.com/@jordenshukla6873" target="_blank"> My Channel</a>
+
+
 </body>
-<footer>
-    <audio controls autoplay muted>
-        <source src="Puella Magi MadokaMagica - Mata Ashita (8bit).mp3" typ="audio/ogg">
-    </audio>
-</footer>
 </html>
